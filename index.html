@@ -24,6 +24,7 @@
      <!-- Bootstrap core JavaScript -->
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/script.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -110,13 +111,25 @@
                       </ul>
                     </div>
                     <div class="col-lg-4 redbg stocks padding-bottom-sm no-padding">
-                      <div class="calculator-title white center">HALI YA SOKO</div>
-                      <ul class="list white padding-override">
-                          <li>Bei ya hisa za Vodacom <span class="large pull-right">850<sup>TSH</sup></span></li>
-                          <li>Ofa inaanza <span class="large pull-right">27.02.2017</span></li>
-                          <li>Ofa inafungwa <span class="large pull-right">27.03.2017</span></li>
-                      </ul>
-                      <p class="center"><a class="btn btn-primary btn-lg invisible" href="#" role="button">Kokotoa hisa</a></p>
+                      <div class="calc-info">
+                          <div class="calculator-title white center">HALI YA SOKO</div>
+                          <ul class="list white padding-override">
+                              <li>Bei ya hisa za Vodacom <span class="large pull-right">850<sup>TSH</sup></span></li>
+                              <li>Ofa inaanza <span class="large pull-right">27.02.2017</span></li>
+                              <li>Ofa inafungwa <span class="large pull-right">27.03.2017</span></li>
+                          </ul>
+                          <p class="center"><a class="btn btn-primary btn-lg invisible" href="#" id="showCalc" role="button">Kokotoa hisa</a></p>
+                      </div>
+                       <div class="calc">
+                          <div class="calculator-title white center">KOTOA HISA</div>
+                          <ul class="list white padding-override">
+                              <li>Bei ya hisa za Vodacom <span class="large pull-right">850<sup>TSH</sup></span></li>
+                              <li>Amount invested <input type="text" class="form-control" id="amount" placeholder="Amount" value="0" /></li>
+                              <li>Number of shares <span class="large pull-right" id="total">0<sup>TSH</sup></span></li>
+                          </ul>
+                          <p class="center"><a class="btn btn-primary btn-lg" href="#" id="showCalc" role="button">Wasiliana nasi</a></p>
+                      </div>
+                        
                    </div>
               </div>
         </div>
@@ -217,31 +230,30 @@
                      </div>
                  </div>
                  <div class="row">
-                         <form>
+                         <form method="post" action="comms/sendmail.php">
                              <div class="col-sm-4">
                                   <div class="form-group">
                                     <label for="firstname" class="white">Jina la kwanza</label>
-                                    <input type="text" class="form-control" id="firstname" placeholder="Jina la kwanza">
+                                    <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Jina la kwanza">
                                   </div>
                                   <div class="form-group">
                                     <label for="email" class="white">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email address">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email address">
                                   </div>
                              </div>
                              <div class="col-sm-4">
                                   <div class="form-group">
                                     <label for="lastname" class="white">Jina la mwisho</label>
-                                    <input type="text" class="form-control" id="lastname" placeholder="Jina la mwisho">
+                                    <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Jina la mwisho">
                                   </div>
                                   <div class="form-group">
                                     <label for="phone" class="white">Namba ya simu</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="Namba ya simu">
+                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Namba ya simu">
                                   </div>
                              </div>
                               <div class="col-sm-8">
                                   <button type="submit" class="btn btn-lg btn-danger pull-right">Wasilisha</button>
                               </div>
-
                             </form>
                      </div>
                  </div>

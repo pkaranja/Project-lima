@@ -42,12 +42,15 @@ footer{background: #2e2e2e; color: #FFF;}
 .list li{list-style: none; padding: 10px; border-bottom: 1px solid #ccc; }
 .padding-override li{padding: 24px !important;}
 .large{font-size: 28px; font-weight: bold;}
+.extra-large{font-size: 48px; font-weight: bold;}
 .date{font-style: italic;}
 .stocks a{margin: 20px 0;}
 .carousel-caption{ float: left; text-align: left; top: 30%;}
 .social li{ display: inline; margin: 5px;}
 .small-padding-right{padding-right: 5px;}
-
+.calc{margin-bottom: 30px; display: non/e;}
+.calc form{ padding: 10px;}
+.calc-info{display: none; }
 /********************************************************/
 #rhombus {
 	position:absolute;
