@@ -6,7 +6,8 @@ h1{font-size: 3vw; font-weight: bold;}
 p, a, div{font-family: 'vodafone_rgregular', 'Arial', sans-serif; font-size: 16px;color: #656363;}
 .invisible{visibility: hidden;}
 h3{font-size: 36px; }
-.title{line-height: 32px;display: inline-block;padding-bottom: 35px;position: relative;}
+.padding-sm{ padding: 15px; }
+.title{line-height: 32px;display: inline-block;padding-bottom: 35px;position: relative; }
 .title:after{
     content: "";
     position: absolute;
@@ -25,6 +26,7 @@ nav a{ color: #FFF;}
 .slider{padding:10px 0;}
 .calculator-title{background: #cd0000;}
 .greybg{ background: #f3f3f3; }
+.grey{ color: #656363; }
 .redbg{ background: #e50000; }
 .red{color: #e50000;}
 .white{color: #fff;}
@@ -35,6 +37,7 @@ nav a{ color: #FFF;}
 .downloads li{list-style: none; padding: 15px; background: #f3f3f3; border-bottom: 1px solid #444; font-weight: bold; cursor: pointer;}
 .btn{background: #8331e8 !important; color: #FFF !important; font-weight: bold; text-transform: uppercase;}
 footer{background: #2e2e2e; color: #FFF;}
+.darkGreybg{background: #2e2e2e; color: #FFF;}
 .stocks{border-bottom-left-radius: 50px;}
 .stocks-border{border-top:3px solid #cd0000; }
 .no-padding{padding-left:0; padding-right: 0;}
@@ -48,9 +51,10 @@ footer{background: #2e2e2e; color: #FFF;}
 .carousel-caption{ float: left; text-align: left; top: 30%;}
 .social li{ display: inline; margin: 5px;}
 .small-padding-right{padding-right: 5px;}
-.calc{margin-bottom: 30px; display: non/e;}
+.calc{}
 .calc form{ padding: 10px;}
-.calc-info{display: none; }
+.dontshow{display: none;}
+
 /********************************************************/
 #rhombus {
 	position:absolute;
