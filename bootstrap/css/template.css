@@ -1,4 +1,5 @@
 .wrapper{overflow: hidden;}
+.container{max-width: 960px;}
 .img-responsive{width: 100%;}
 .masthead{position: relative;}
 h1, h2, h3, h4, h5, h6, h7{ font-family: 'vodafone_exbregular'; }
@@ -35,7 +36,7 @@ nav a{ color: #FFF;}
 .download-title,.news-title,.calculator-title{text-transform: uppercase; padding: 10px 0; font-weight: bold;}
 .downloads{padding: 0;}
 .downloads li{list-style: none; padding: 15px; background: #f3f3f3; border-bottom: 1px solid #444; font-weight: bold; cursor: pointer;}
-.btn{background: #8331e8 !important; color: #FFF !important; font-weight: bold; text-transform: uppercase;}
+.btn{background: #8331e8; color: #FFF; font-weight: bold; text-transform: uppercase;}
 footer{background: #2e2e2e; color: #FFF;}
 .darkGreybg{background: #2e2e2e; color: #FFF;}
 .stocks{border-bottom-left-radius: 50px;}
@@ -54,6 +55,9 @@ footer{background: #2e2e2e; color: #FFF;}
 .calc{}
 .calc form{ padding: 10px;}
 .dontshow{display: none;}
+.btn-active{background: #F0F0F0; color: #444;}
+.btn-inactive:hover{ color: #cd0000;}
+
 
 /********************************************************/
 #rhombus {
@@ -61,7 +65,7 @@ footer{background: #2e2e2e; color: #FFF;}
 	width: 45px;
 	height: 45px;
 	left: -50px;
-	top: 45px;
+	top: 0px;
 	z-index:99999999999999999;
 }
 #rhombus .red-background {

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Vodacom Project Lima  - Stocks information</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-flat.min.css" rel="stylesheet">
+    <link href="bootstrap/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/css/bootstrap-flat-extras.min.css" rel="stylesheet">
+    <link href="https://vodacom.co.tz/nogesha-upendo/assets/fonts/fonts.css" rel="stylesheet">
+    <link href="bootstrap/css/template.css" rel="stylesheet">
+    
+     
+     <!-- Bootstrap core JavaScript -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="bootstrap/js/graphs.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="btn-group pull-right" role="group" aria-label="Language">
+                  <a href="/" type="button" class="btn btn-sm btn-active">En</a>
+                  <a href="sw/index.html" type="button" class="btn btn-sm btn-inactive">Sw</a>
+                </div>
+            </div>
+        </div>
+      </div>
+       <br />
+        <div class="container">
+              <div class="masthead">
+                   <div id="rhombus">
+                        <div class="red-background"></div>
+                        <a title="Vodacom Project Lima" href="/">
+                            <img alt="Vodacom Project Lima" src="https://vodacom.co.tz/nogesha-upendo/assets/images/vodalogo.png">
+                        </a>
+                    </div>
+                    <nav>
+                  <ul class="nav nav-justified">
+                    <li><a href="index.html">About us</a></li>
+                    <li><a href="our-investments.html">Our investments</a></li>
+                    <li class="active"><a href="#">Stocks information</a></li>
+                    <li><a href="our-team.html">Our team</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
+         <div class="container padding-top-sm padding-bottom-sm">
+              <div class="row greybg stocks-border">
+                    <div class="col-lg-8">
+                      <div class="news-title red">Recent updates</div>
+                      <ul class="list">
+                          <li>
+                              <p>Speaking at the Company&rsquo;s headquarters, Vodacom Tanzania&rsquo;s Managing Director, Mr. Ian Ferrao said, Vodacom Tanzania confirms that the Capital Markets &amp; Securities Authority (CMSA) has approved Vodacom Tanzania Plc&rsquo;s prospectus ahead of its Initial...
+                              &nbsp; <a href="vodacom-receives-approval-for-an-ipo.html" class="date red">Read more</a></p>
+                              <p class="date">28 February, 2017</p>
+
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 redbg stocks padding-bottom-sm no-padding">
+                        <div class="calculator-title white center">FAQs</div>
+                          <h3 class="white padding-sm center"><br />Do you have <br />any questions?<br /></h3>
+                          <p class="center">
+                              <a class="btn btn-primary btn-lg" href="faqs.html" target="_blank" role="button">Learn more</a>
+                          </p>
+                          <p>&nbsp;</p>
+                          <p>&nbsp;</p>
+                   </div>
+              </div>
+        </div>
+         <div class="container padding-top-sm padding-bottom-sm">
+             <div class="row">
+                 <div class="col-xs-12">
+                     <h3 class="title">Recent performance and outlook</h3>
+                     <p class="bold">Competitive pressures, pricing erosion and increased taxation <br/>have impacted results for FY2014 to FY2016</p>
+                 </div>
+             </div>
+             <div class="row padding-top-sm">
+                <div class="col-md-6">
+                    <div id="serviceRevenue"></div>
+                 </div>
+                 <div class="col-md-6">
+                     <div id="voiceData"></div>
+                 </div>
+             </div>
+             <div class="row padding-top-sm">
+                 <div class="col-md-12">
+                    <p class="bold">Service revenue is showing strong recovery in Q3 and we expect to exit <br/>Q4(March 2017) at greater than 5% Y-O-Y growth</p>
+                     <div id="monthlyserviceRevenue"></div>
+                 </div>
+             </div>
+             <div class="row padding-top-sm">
+               <div class="col-md-12">
+                    <p class="bold">Revenue growth recovery will continue to be fueled <br /> by M-PESA and growing demand for data</p>
+                 </div>
+                <div class="col-md-4">
+                    <div id="mpesaRevenue"></div>
+                 </div>
+                 <div class="col-md-8">
+                     <div id="dataTraffic"></div>
+                 </div>
+             </div>
+             
+             
+            <!--<div class="row padding-top-sm">
+                 <div class="col-xs-12">
+                  <img src="images/graph1.png" class="img-responsive" />
+                    <img src="images/graph2.png" class="img-responsive" />
+                     <div class="news-title red">UKUAJI WA MAPATO YA HUDUMA KWA MWEZI (TZS BN)</div>
+                     <img src="images/graph3.png" class="img-responsive" />
+                 </div>
+             </div> !-->
+          </div>
+          <div class="greybg">
+          <div class="container">
+              <h3 class="title">Authorised collecting agents</h3>
+
+              <div class="row padding-top-sm">
+                  <div class="col-md-6">
+                        <p class="bold red">Orbit Securities Company Limited</p>
+                        <p>PO Box 70254, <br/>Dar es Salaam 4th Floor, <br/>Golden Jubilee Towers Ohio Street</p>
+                        <p><strong>Tel:</strong> +255 22 211 1758, </p>
+                        <p><strong>Fax:</strong> +255 22 211 3067</p>
+                        <p><strong>E-mail:</strong> orbit@orbit.co.tz</p>
+                        <p> &nbsp; </p>
+                        <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">Tanzania Securities Limited</p>
+                        <p>PO Box 9821, <br/>Dar es Salaam 7th Floor, <br/>IPS Building Samora Avenue/Azikiwe Street</p>
+                        <p><strong>Tel:</strong> +255 (22) 211 2807, Mob: +255 71 879 9997/+255 71 324 4758</p> 
+                        <p><strong>Fax:</strong> +255 (22) 211 2809 </p>
+                        <p><strong>E-mail:</strong> info@tanzaniasecurities.co.tz</p>
+                        <p><strong><p>Website:</strong> www.tanzaniasecurities.co.tz</p>
+                        <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">TIB Rasilimali Limited</p>
+                        <p>PO Box 9373, Dar es Salaam <br/> 7th Floor, Samora Tower</p>
+                        <p><strong>Tel:</strong> +255 22 211 1711, Mob: +255 71 377 7818/+255 78 477 7818</p>
+                        <p><strong>Fax:</strong> +255 22 212 2883 </p>
+                        <p><strong>E-mail:</strong> rasilimali@africaonline.co.tz</p>
+                        <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">Core Securities Ltd</p>
+                        <p>PO Box 76800, <br/>Dar es Salaam Fourth Floor Elite City Building, <br/>Samora Avenue</p>
+                        <p><strong>Tel:</strong> +255 22 212 3103</p>
+                        <p><strong>Fax:</strong> +255 22 212 2562 </p>
+                        <p><strong>E-mail:</strong> info@coresecurities.co.tz</p>
+                        <p><strong><p>Website:</strong> www.coresecurities.co.tz</p>
+                        <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">Vertex International Securities Ltd</p>
+                        <p>PO Box 13412, Dar es Salaam,<br/>Annex Building Zambia High Commission, <br/>Sokoine Drive/Ohio Street</p>
+                        <p><strong>Tel:</strong> +255 22 211 6382</p>
+                        <p><strong>Fax:</strong> +255 22 211 0387</p>
+                        <p><strong>E-mail:</strong> operations@vertex.co.tz</p>
+                        <p><strong><p>Website:</strong> www.vertex.co.tz</p>
+                         <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">SOLOMON Stockbrokers Limited</p>
+                        <p>PO Box 77049, Dar es Salaam Ground Floor,<br/> PPF House <br/>Samora Avenue/Morogoro Road</p>
+                        <p><strong>Tel:</strong> +255 22 212 4495/211 2874</p>
+                        <p><strong>Fax:</strong> +255 22 213 1969, Mob: +255 71 426 9090 +255 76 426 9090</p>
+                        <p><strong>E-mail:</strong> solomon@simbanet.net info@solomon.co.tz </p>
+                        <p><strong><p>Website:</strong> www.solomon.co.tz</p>
+                        <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">E.A. Capital Ltd</p>
+                        <p>PO Box 20650, Dar es Salaam, <br/> 6th Floor, IT Plaza, <br/> Ohio Street</p>
+                        <p><strong>Tel:</strong> +255 77 974 0818/+255 78 446 1759 
+                        <p><strong>E-mail:</strong> ec@eacapital-tz.com</p>
+                         <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">SMART Stock Brokers (T) Ltd</p>
+                        <p>PO Box 1056878, <br/>Dar es Salaam 1st Floor, <br/>Masdo House Samora Avenue</p>
+                        <p><strong>Tel:</strong> +255 22 213 3607</p>
+                        <p><strong>E-mail:</strong> info@smartstockbrokers.co.tz</p>
+                        <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">Zan Securities Limited</p>
+                        <p>PO Box 5366, Dar es Salaam / PO Box 2138, Zanzibar 1st Floor,<br/> Viva Tower Unit-15, <br/>Bibititi Road Muzammil Centre, Malawi Road, Zanzibar</p>
+                        <p><strong>Tel:</strong> +255 22 212 6415, Mob: +255 78 634 4767, +255 75 589 8425</p>
+                        <p><strong>Fax:</strong> +255 22 212 6414</p>
+                        <p><strong>E-mail:</strong> info@zansec.com</p>
+                        <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">Optima Corporate Finance Limited</p>
+                        <p>PO Box 4441, Dar es Salaam,<br/>Plot No 565 B , Senga Street, <br/>Mikocheni </p>
+                        <p><strong>Tel:</strong> +255 68 485 6648</p>
+                        <p><strong>E-mail:</strong> gichohi@optimacorporate.co.tz</p>
+                        <p> &nbsp; </p>
+                        <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">ARCH Financial &amp; Investment Advisory Limited</p>
+                        <p>PO Box 38028 Dar es Salaam <br/>2nd Floor, Wing C, NIC Life House, <br/>Sokoine Drive/Ohio Street</p>
+                        <p><strong>Tel:</strong> +255 22 73 292 2396</p>
+                        <p><strong>Fax:</strong> +255 22 73 292 8489</p>
+                        <p> &nbsp; </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold red">Maxcom Africa Limited Mobile Banking</p>
+                        <p>PO Box 31211, Dar es Salaam,<br/> First Floor, Sit 3-4, <br/> Millennium Tower Makumbusho Area,</p>
+                        <p><strong>Tel:</strong> +255 757 244 424, +255 764 700 200</p>
+                        <p><strong>E-mail:</strong> infor@maxcomafrica.com</p>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        
+         <!-- Site footer -->
+              <footer class="footer">
+                <div class="container padding-top-sm padding-bottom-sm">
+                     <div class="row padding-top-sm">
+                         <div class="col-xs-12">
+                            <a href="terms-and-conditions.html" class="white">Terms & Conditions</a>
+                             <ul class="social pull-right">
+                                 <li><a class="white" href="https://twitter.com/vodacomtanzania" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                 <li><a class="white" href="https://www.facebook.com/tzvodacom/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a class="white" href="https://www.instagram.com/vodacomtanzania/"><i class="fa fa-instagram" target="_blank"></i></a></li>
+                             </ul>
+                         </div>
+                     </div>
+              </div>
+              </footer> <!-- /container -->
+      </div>
+</body>
+</html>
