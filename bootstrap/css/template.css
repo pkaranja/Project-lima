@@ -22,7 +22,8 @@ h3{font-size: 36px; }
 nav li{border-right: 1px solid #FFF;}
 .padding-top-sm{padding-top: 20px;}
 .padding-bottom-sm{padding-bottom: 20px;}
-nav{background: #e50000;}
+.nav{background: #e50000;}
+.navbar-toggle span{background: #e50000;}
 nav a{ color: #FFF;}
 .slider{padding:10px 0 0 0;}
 .calculator-title{background: #cd0000;}
@@ -57,7 +58,13 @@ footer{background: #2e2e2e; color: #FFF;}
 .dontshow{display: none;}
 .btn-active{background: #F0F0F0; color: #444;}
 .btn-inactive:hover{ color: #cd0000;}
-
+.btn:hover{background: #444; color: #FFF;}
+.curved{border-bottom-left-radius: 50px}
+.mechanics2{background: #444 !important;}
+.mechanics1{background: #444 !important;}
+.mechanics2:hover{background: #cd0000 !important;}
+.mechanics1:hover{background: #cd0000 !important;}
+#faqNav{background: transparent;}
 
 /********************************************************/
 #rhombus {

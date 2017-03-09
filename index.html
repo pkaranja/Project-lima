@@ -19,23 +19,24 @@
     <link href="bootstrap/css/bootstrap-flat-extras.min.css" rel="stylesheet">
     <link href="https://vodacom.co.tz/nogesha-upendo/assets/fonts/fonts.css" rel="stylesheet">
     <link href="bootstrap/css/template.css" rel="stylesheet">
-    
      
      <!-- Bootstrap core JavaScript -->
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/js/script.js"></script>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="bootstrap/js/script.js"></script>
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="container">
+      <div class="container hide">
         <div class="col-xs-12">
             <div class="row">
                 <div class="btn-group pull-right" role="group" aria-label="Language">
@@ -54,14 +55,27 @@
                             <img alt="Vodacom Project Lima" src="https://vodacom.co.tz/nogesha-upendo/assets/images/vodalogo.png">
                         </a>
                     </div>
+                    
                     <nav>
-                      <ul class="nav nav-justified">
-                        <li class="active"><a href="#">About us</a></li>
-                        <li><a href="our-investments.html">Our investments</a></li>
-                        <!--<li><a href="stocks-information.html">Stocks information</a></li> !-->
-                        <li><a href="our-team.html">Our team</a></li>
-                        <li><a href="faqs.html">FAQs</a></li>
-                      </ul>
+                      <div class="container">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                          <ul class="nav nav-justified">
+                            <li class="active"><a href="#">About us</a></li>
+                            <li><a href="our-investments.html">Our investments</a></li>
+                            <!--<li><a href="stocks-information.html">Stocks information</a></li> !-->
+                            <li><a href="our-team.html">Our team</a></li>
+                            <li><a href="faqs.html">FAQ's</a></li>
+                          </ul>
+                        </div><!--/.nav-collapse -->
+                      </div>
                     </nav>
               </div>
           </div>
@@ -77,15 +91,15 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                  <img src="images/about-bg.png" class="img-responsive" alt="...">
+                  <img src="images/slider2.png" class="img-responsive" alt="...">
                   <div class="carousel-caption">
-                    <h1>Kuwa mmiliki wa sehemu ya Vodacom, <br/>nunua hisa za Vodacom leo<br/>Mtandao namba 1 Tanzania</h1>
+                    <h1>Empowering the digital <br />lives of our customers</h1>
                   </div>
                 </div>
                 <div class="item">
-                  <img src="images/about-bg.png" class="img-responsive" alt="...">
+                  <img src="images/slider4.png" class="img-responsive" alt="...">
                   <div class="carousel-caption">
-                    <h1>Kuwa mmiliki wa sehemu ya Vodacom, <br/>nunua hisa za Vodacom leo<br/>Mtandao namba 1 Tanzania</h1>
+                    <h1>Speed,Simplicity & Trust<br />In a connected society</h1>
                   </div>
                 </div>
               </div>
@@ -101,6 +115,19 @@
               </a>
             </div>
           </div>
+          <div class="container padding-top-sm padding-bottom-sm">
+              <div class="row">
+                <div class="col-xs-8">
+                    <h3 class="title red">Leading <br/>Telecommunications Brand</h3>
+                    <p class="red">We are one of the world's largest telecommunications companies providing a wide range of services including voice, messaging and data across mobile and fixed networks</p>
+                </div>
+                  <div class="col-xs-12">
+                       <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cqz6Ici9lFg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                  </div>
+              </div>
+        </div>
          <div class="container padding-top-sm padding-bottom-sm">
               <div class="row greybg stocks-border">
                     <div class="col-lg-8">
@@ -135,7 +162,7 @@
                               <td>Monday 15<sup>th</sup> May 2017</td>
                           </tr>
                           <tr>
-                              <td>Listing and commencement of trading of issued and fully paid shares on the Exchange</td>
+                              <td>Listing and commencement of trading <br/>of issued and fully paid shares on the Exchange</td>
                               <td>Tuesday 16<sup>th</sup> May 2017</td>
                           </tr>
                           <tr>
@@ -145,22 +172,22 @@
                       </table>
                     </div>
                     <div class="col-lg-4 redbg stocks padding-bottom-sm no-padding">
-                       <div class="calc" id="calc">
-                          <div class="calculator-title white center">Calculate shares</div>
-                          <ul class="list white padding-override">
-                              <li> Vodacom <span class="large pull-right">850<sup>TSH</sup></span></li>
-                              <li>Amount invested <input type="text" class="pull-right grey" id="amount" placeholder="Amount" value="0" /></li>
-                              <li>Number of shares <span class="large pull-right" id="total">0</span></li>
-                          </ul>
-                          <p class="center">
-                              <a class="btn btn-primary btn-lg invisible" href="downloads/application_form.pdf" target="_blank" role="button">Download </a>
-                          </p>
-                          <p>&nbsp;</p>
-                          <p>&nbsp;</p>
-                      </div>
-                        
-                   </div>
-              </div>
+                      <div class="calc-info">
+                        <div class="calc-info" id="calc-info">
+                               <div class="calculator-title white center">Market status</div>
+                               <ul class="list white padding-override">
+                                   <li>Share price <span class="large pull-right">850<sup>TSH</sup></span></li>
+                                   <li>Share value <span class="large pull-right">476 Billion</span></li>
+                                   <li>Share number <span class="large pull-right">560 Million</span></li>
+                                   <li>Offer opens <span class="large pull-right">09.03.2017</span></li>
+                                   <li>Offer closes <span class="large pull-right">19.04.2017</span></li>
+                                   
+                               </ul>
+                              <p>&nbsp;</p>
+                           </div>
+                       </div>
+                  </div>
+            </div>
         </div>
        
             <div class="container padding-top-sm padding-bottom-sm">
@@ -169,9 +196,9 @@
                           <h3 class="title red">Put your confidence <br />in the future with us</h3>
                           <div class="download-title red">Downloadable information</div>
                           <ul class="downloads">
-                              <li><a href="downloads/original-project_lima_booklet.pdf">IPO Prospectus </a></li>
-                              <li><a href="#">Annual report 2016/2017</a></li>
-                              <li><a href="#">Revenue report 2016/2017</a></li>
+                              <li><a href="downloads/vodacom_tanzania_ipo_prospectus.pdf">Vodacom Tanzania IPO prospectus</a></li>
+                              <li><a href="downloads/vodacom_tanzania_authorized_collecting_agents.pdf">Authorized collecting agents</a></li>
+                              <li><a href="sw/downloads/vodacom_tanzania_ipo_prospectus_sw.pdf">Vodacom Tanzania IPO prospectus (Swahili)</a></li>
                           </ul>
                       </div>
                       <div class="col-md-6">
@@ -184,7 +211,7 @@
                  <div class="row">
                      <div class="col-xs-12">
                          <h3 class="title red">Take a chance to invest in the <br />growth of the Tanzanian <br />digital economy</h3>
-                         <p class="red">Vodacom ni kampuni ya simu yenye mafanikio zaidi Tanzania.<br/> Kuwa sehemu ya mafanikio yetu kwa kununua hisa</p>
+                         <p class="red">Vodacom is the most a successful mobile operator in Tanzania.<br/>Be part of our success by buying shares</p>
                      </div>
                  </div>
                  <div class="row padding-top-sm">
@@ -198,7 +225,7 @@
                         <div class="center">
                              <img src="images/semi-2.png" class="img-responsive" />
                          </div>
-                        <p class="bold">Over 12 Billion market customers with 31% market share.</p>
+                        <p class="bold">Over 12 Million market customers with 31% market share.</p>
                      </div>
                      <div class="col-sm-3">
                         <div class="center">
@@ -220,31 +247,31 @@
                  <div class="row">
                      <div class="col-xs-12">
                          <h3 class="title red">Get started</h3>
-                         <p class="red">Buying Vodacom shares is easy. Follow the following instructions</p>
+                         <p class="red">Buying Vodacom shares is easy.<br/> Follow the following instructions</p>
                      </div>
                  </div>
                  <div class="row">
-                     <div class="col-xs-6"><a class="btn btn-primary btn-lg pull-right active mechanics2">Stock market agent</a></div>
-                     <div class="col-xs-6"><a class="btn btn-primary btn-lg mechanics1">Mobile phone</a></div>
+                     <div class="col-md-4 col-md-offset-2"><a class="btn btn-primary btn-lg mechanics2 btn-block">Stock market agent</a></div>
+                     <div class="col-md-4"><a class="btn btn-primary btn-lg mechanics1 btn-block">Mobile phone</a></div>
                  </div>
                  <div class="row padding-top-sm dontshow" id="mtandaoni">
                      <div class="col-md-3 col-md-offset-2">
                          <div class="center">
                              <img src="images/icon-1.png" class="img-responsive padding-top-sm padding-bottom-sm" />
                          </div>
-                         <p class="red">Jisajili DSE kupitia simu ya mkononi kwa kupiga namba *150*36# .</p>
+                         <p class="red">Register with DSE via mobile by dialing *150*36# .</p>
                      </div>
                      <div class="col-md-3">
                         <div class="center">
                              <img src="images/icon-2.png" class="img-responsive padding-top-sm padding-bottom-sm" />
                          </div>
-                        <p class="red">Nunua hisa moja kwa moja kupitia mtandao wa DSE kwa kupiga *150*36# na kufuata maelekezo.</p>
+                        <p class="red">Buy shares directly through DSE by dialing *150*36#</p>
                      </div>
                      <div class="col-md-3">
                         <div class="center">
                              <img src="images/icon-3.png" class="img-responsive padding-top-sm padding-bottom-sm" />
                          </div>
-                        <p class="red">Lipia hisa zako kirahisi kupitia M-Pesa kwa kupiga *150*00# na kufuata maelekezo.</p>
+                        <p class="red">Make your payments easily via M-Pesa by dialing *150*00#</p>
                      </div>
                  </div>
                  <div class="row padding-top-sm" id="wakala">
@@ -252,25 +279,25 @@
                          <div class="center">
                              <img src="images/icon-4.png" class="img-responsive padding-top-sm padding-bottom-sm" />
                          </div>
-                         <p class="red">Jipatie fomu yako ya maombi kutoka maduka yote ya Vodacom au kwa Wakala aliyeidhinishwa.</p>
+                         <p class="red">Get you application form from in any Vodacom shop or from an authorized agent</p>
                      </div>
                      <div class="col-md-3">
                         <div class="center">
                              <img src="images/icon-5.png" class="img-responsive padding-top-sm padding-bottom-sm" />
                          </div>
-                        <p class="red">Kutana na Wakala aliyeidhinishwa kuwasilisha fomu pamoja nyaraka husika na kupata ushauri wa kibiashara.</p>
+                        <p class="red">Meet an authorized Agent to submit the form with relevant documents and get business advice</p>
                      </div>
                      <div class="col-md-3">
                         <div class="center">
                              <img src="images/icon-6.png" class="img-responsive padding-top-sm padding-bottom-sm" />
                          </div>
-                        <p class="red">Pamoja na usaidizi  kutoka kwa wakala alieidhinishwa, fungua account yako ya DSE.</p>
+                        <p class="red">With assistance from the authorized agent, open your DSE account.</p>
                      </div>
                      <div class="col-md-3">
                         <div class="center">
                              <img src="images/icon-7.png" class="img-responsive padding-top-sm padding-bottom-sm" />
                          </div>
-                        <p class="red">Akaunti yako iko tayari kwa kununua hisa.</p>
+                        <p class="red">Your account is ready to buy shares.</p>
                      </div>
                  </div>
               </div>

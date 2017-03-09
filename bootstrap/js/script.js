@@ -26,4 +26,14 @@ $(function () {
         $("#mtandaoni").hide();
         $("#wakala").slideDown();
     });
+    
+    $(function() {
+        $('#toggle-event').change(function() {
+            if ( $(this).prop('checked') == true ){
+                window.location = "http://localhost/lima";
+            }else{
+                window.location = "http://localhost/lima/sw";
+            }
+        })
+  })
 });

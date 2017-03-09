@@ -30,11 +30,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="container">
+      <div class="container hide">
         <div class="col-xs-12">
             <div class="row">
                 <div class="btn-group pull-right" role="group" aria-label="Language">
@@ -54,50 +56,40 @@
                         </a>
                     </div>
                     <nav>
-                  <ul class="nav nav-justified">
-                    <li><a href="index.html">About us</a></li>
-                    <li class="active"><a href="#">Our investments</a></li>
-                    <li><a href="stocks-information.html">Stocks information</a></li>
-                    <li><a href="our-team.html">Our team</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                  </ul>
-                </nav>
+                      <div class="container">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav nav-justified">
+                                <li><a href="index.html">About us</a></li>
+                                <li class="active"><a href="#">Our investments</a></li>
+                                <!-- <li><a href="stocks-information.html">Stocks information</a></li> !-->
+                                <li><a href="our-team.html">Our team</a></li>
+                                <li><a href="faqs.html">FAQ's</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                      </div>
+                    </nav>
               </div>
           </div>
           <!-- Jumbotron -->
           <div class="slider">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              </ol>
-
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                  <img src="images/about-bg.png" class="img-responsive" alt="...">
+                  <img src="images/slider1.png" class="img-responsive" alt="Our investments">
                   <div class="carousel-caption">
-                    <h1>Kuwa mmiliki wa sehemu ya Vodacom, <br/>nunua hisa za Vodacom leo<br/>Mtandao namba 1 Tanzania</h1>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="images/about-bg.png" class="img-responsive" alt="...">
-                  <div class="carousel-caption">
-                    <h1>Kuwa mmiliki wa sehemu ya Vodacom, <br/>nunua hisa za Vodacom leo<br/>Mtandao namba 1 Tanzania</h1>
+                    <h1>Invest in our<br/> mobile financial services</h1>
                   </div>
                 </div>
               </div>
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Nyuma</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Mbele</span>
-              </a>
             </div>
           </div>
           <div class="redbg">
@@ -107,11 +99,11 @@
                             <img src="images/mpawa.png" class="img-responsive" />
                         </div>
                          <div class="col-md-5">
-                             <h4 class="white">Zaidi ya wateja Milioni 5 wenye akiba ya zaidi ya Tsh Milioni 75.3</h4>
-                             <p class="white">Mpaka sasa tuna wateja zaidi ya Milioni 5 wanaotumia huduma ya M-Pawa, wakiwa wameweka akiba ya zaidi ya Tsh Milioni 75.3. M-Pawa imewawezesha wateja wetu kuweka akiba na kupata mikopo kwa kwa ajili ya kujiendeleza kiuchumi.</p>
+                             <h4 class="white">More than 5 million customers with savings of over 200 Billion TZS</h4>
+                             <p class="white">Until now we have more than 5 million customers using M-Pawa service, having saved more than 200 Billion TZS. M-Pawa has enabled our customers to save and get loans for the economic development purposes.</p>
                          </div>
                          <div class="col-md-5">
-                           <img src="images/foundation-story.png" class="img-responsive" />
+                           <img src="images/mpawa-art.png" class="img-responsive curved" />
                          </div>
                      </div>
                     <div class="row padding-top-sm padding-bottom-sm">
@@ -119,11 +111,11 @@
                             <img src="images/mpesa.png" class="img-responsive" />
                         </div>
                          <div class="col-md-5">
-                             <h4 class="white">Zaidi ya wateja Milioni 5 wenye akiba ya zaidi ya Tsh Milioni 75.3</h4>
-                             <p class="white">Mpaka sasa tuna wateja zaidi ya Milioni 5 wanaotumia huduma ya M-Pawa, wakiwa wameweka akiba ya zaidi ya Tsh Milioni 75.3. M-Pawa imewawezesha wateja wetu kuweka akiba na kupata mikopo kwa kwa ajili ya kujiendeleza kiuchumi.</p>
+                             <h4 class="white">More than 85,000 agents and 1,500 merchants countrywide</h4>
+                             <p class="white">We have more than 85,000 agents across the country and more than 1500 merchants who transact over 2.6 Trillion a month through M-Pesa.</p>
                          </div>
                          <div class="col-md-5">
-                            <img src="images/foundation-story.png" class="img-responsive" />
+                            <img src="images/mpesa-art.png" class="img-responsive curved" />
                         </div>
                      </div>
                  </div>
@@ -134,35 +126,41 @@
              <div class="container padding-top-sm padding-bottom-sm">
                  <div class="row">
                      <div class="col-xs-12 center">
-                         <h3 class="title center">Committed to improving  <br />Tanzanian's lives through the <br /> Vodafone Foundation</h3>
+                         <h3 class="title center">Committed to improving  <br />Tanzanian's lives through <br /> our initiatives</h3>
                      </div>
                  </div>
                  <div class="row padding-top-sm padding-bottom-sm">
-                     <div class="col-sm-3 col-md-offset-2">
+                    <div class="col-sm-4">
+                        <div class="center">
+                             <img src="images/semi-10.png" class="img-responsive" />
+                         </div>
+                        <p class="bold center">Network infrastructure</p>
+                     </div>
+                     <div class="col-sm-4">
                         <div class="center">
                              <img src="images/semi-5.png" class="img-responsive" />
                          </div>
                         <p class="bold center">Invested in over 130 projects</p>
                      </div>
-                     <div class="col-sm-3">
+                     <div class="col-sm-4">
                         <div class="center">
                              <img src="images/semi-6.png" class="img-responsive" />
                          </div>
                         <p class="bold center">Students supported in digital learning</p>
                      </div>
-                     <div class="col-sm-3">
+                     <div class="col-sm-4">
                         <div class="center">
                              <img src="images/semi-7.png" class="img-responsive" />
                          </div>
                         <p class="bold center">Women treated for obstetric fistula disease</p>
                      </div>
-                     <div class="col-sm-3 col-md-offset-3">
+                     <div class="col-sm-4">
                         <div class="center">
                              <img src="images/semi-8.png" class="img-responsive" />
                          </div>
                         <p class="bold center">Desks provided to students, with 34 classrooms built</p>
                      </div>
-                     <div class="col-sm-3">
+                     <div class="col-sm-4">
                         <div class="center">
                              <img src="images/semi-9.png" class="img-responsive" />
                          </div>
@@ -184,7 +182,8 @@
                      <div class="center padding-top-sm">
                           <h3 class="title center">Take a chance to invest in the<br /> growth of the Tanzania digital economy</h3>
                      </div>
-                      <p class="center red padding-top-sm padding-bottom-sm">Kwa miaka 18, Vodacom imekuwa mtandao namba moja Tanzania ikiwa na zaidi ya wateja Milioni 12, ambayo ni sawa na 31% ya soko. Ndio mtandao wa kwanza kutambulisha huduma za kifedha kwa njia ya simu za mkononi, M-Pesa. Na sasa tuna wakala zaidi ya 85,000 nchini kote wanaofanya miamala ya zaidi ya Sh Trilioni 2.6 kwa mwezi baina ya watumiaji wa M-Pesa zaidi ya Milioni 7</p>
+                      <p class="center red padding-top-sm padding-bottom-sm">
+                          For 18 years, Vodacom has been the leading telecommunications network in Tanzania with more than 12 Million customers, which is equal to 31% sign of the entire market. We are the first network in Tanzania to introduce financial mobile services, M-Pesa. And now we have over 85,000 agents countrywide transacting over 2.6 Trillion a month between 7 Million M-Pesa users.</p>
                       <div class="center padding-bottom-sm">
                           <a class="btn btn-primary" href="https://vodacom.co.tz/foundation">Vodacom Foundation</a>
                       </div>
